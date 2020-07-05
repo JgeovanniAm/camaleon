@@ -1,0 +1,16 @@
+{
+  "routes":[
+    {
+      "path": "/",
+      "value": "showreel"
+    },
+    {
+      "path": "/nosotros",
+      "value": "nosotros"
+    },
+    {
+      "path": "/nosotros",
+      "value": "nosotros"
+    }
+  ]
+}
