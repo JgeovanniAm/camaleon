@@ -13,17 +13,8 @@ export default function GaleryComponent() {
   function scrollMagicInit() {
     const elem = GalaryTag.current;
     const controller = new ScrollMagic.Controller();
-    const scene = new ScrollMagic.Scene({ triggerElement: "#galeryscroll", triggerHook: '0.5', offset: 30, duration: `${elem.offsetHeight}` })
+    const scene = new ScrollMagic.Scene({ triggerElement: "#galeryscroll", triggerHook: '0.5', offset: -50, duration: `${elem.offsetHeight}+50` })
       .on('enter', () => Array.from(elem.children).map(i => i.classList.add(styles.cardShine)))
-      .on('leave', () => Array.from(elem.children).map(i => i.classList.remove(styles.cardShine)))
-      .addIndicators(
-        {
-          name: 'fixed',
-          colorStart: 'fixed start',
-          colorEnd: 'fixed ended',
-          colorTrigger: 'black'
-        }
-      )
       .addTo(controller);
 
   }

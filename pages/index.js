@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import MainLayout from '../components/templates/main-layout';
 import HomeBanner from '../components/organisms/home-hero';
+import ShowReelComponent from '../components/organisms/showreel';
 
 const HomePage = () => (
   <>
@@ -13,6 +14,7 @@ const HomePage = () => (
     </Head>
     <MainLayout>
       <HomeBanner></HomeBanner>
+      <ShowReelComponent />
     </MainLayout>
   </>
 )
