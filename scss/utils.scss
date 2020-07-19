@@ -1,14 +1,14 @@
 .u-container {
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 10px;
 
   @media (min-width: $breakpoint-md) {
-    margin: 30px auto;
+    margin: 60px auto;
     padding: 20px;
   }
 
   @media (min-width: $breakpoint-xl) {
-    margin: 60px auto;
+    margin: 80px auto;
     width: 1200px;
   }
 }
@@ -30,7 +30,7 @@
 }
 
 .u-titlePrimary {
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: 5px;
   text-align: center;
 
@@ -41,4 +41,42 @@
 
 .u-buttonPrimary {
 
+}
+
+.u-cta {
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  margin: 0 .625rem .625rem 0;
+  padding: 1.2em 3em;
+  text-align: center;
+  background: $pink-1;
+  text-decoration: none;
+  width: auto;
+
+  &:hover {
+    background: $green-1;
+    transition: .7s ease-in-out;
+  }
+}
+
+.u-cta--secondary {
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  margin: 0 .625rem .625rem 0;
+  padding: 1.2em 3em;
+  text-align: center;
+  background: $black;
+  text-decoration: none;
+  width: auto;
+
+  &:hover {
+    color: $pink-1;
+    transition: 0.6s ease-in-out;
+  }
 }
