@@ -1,7 +1,7 @@
-import styles from './styles.module.scss';
 import TitleComponent from '../../atoms/title';
 import ParagraphComponent from '../../atoms/paragraph';
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
+import styles from './styles.module.scss';
 
 // ssr scroll magic has a conflict (window property)
 const AnimatedTitleDynamic = dynamic(() => import('../../molecules/home-hero-animatedTitle'), {

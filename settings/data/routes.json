@@ -5,10 +5,6 @@
       "value": "inicio"
     },
     {
-      "path": "/servicios",
-      "value": "servicios"
-    },
-    {
       "path": "/projectos",
       "value": "projectos"
     },

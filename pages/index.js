@@ -2,6 +2,7 @@ import Head from 'next/head';
 import MainLayout from '../components/templates/main-layout';
 import HomeBanner from '../components/organisms/home-hero';
 import ShowReelComponent from '../components/organisms/showreel';
+import IntroProject from '../components/organisms/intro-projects';
 
 const HomePage = () => (
   <>
@@ -15,6 +16,7 @@ const HomePage = () => (
     <MainLayout>
       <HomeBanner></HomeBanner>
       <ShowReelComponent />
+      <IntroProject />
     </MainLayout>
   </>
 )
