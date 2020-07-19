@@ -1,0 +1,1 @@
+{"name":"camaleonfilms","version":"0.1.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"gsap":"^3.4.0","next":"9.4.4","react":"16.13.1","react-dom":"16.13.1","react-lazyload":"^3.0.0","sass":"^1.26.8","scrollmagic":"^2.0.7"},"readme":"ERROR: No README data found!","_id":"camaleonfilms@0.1.0"}
