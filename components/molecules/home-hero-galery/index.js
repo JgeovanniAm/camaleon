@@ -14,20 +14,20 @@ export default function GaleryComponent() {
     const elem = GalaryTag.current;
     const controller = new ScrollMagic.Controller();
     const scene = new ScrollMagic.Scene({ triggerElement: "#galeryscroll", triggerHook: '0.5', offset: -50, duration: `${elem.offsetHeight}+50` })
-      .on('enter', () => Array.from(elem.children).map(i => i.classList.add(styles.cardShine)))
-      .on('leave', () => Array.from(elem.children).map(i => i.classList.remove(styles.cardShine)))
+      .on('enter', () => Array.from(elem.children).map(i => i.classList.add(styles.cardEffectShow)))
+      .on('leave', () => Array.from(elem.children).map(i => i.classList.remove(styles.cardEffectShow)))
       .addTo(controller);
 
   }
 
   return (
     <div ref={GalaryTag} id="galeryscroll" className={styles.heroGaleryHome}>
-      <div className={styles.cardHide_shine}>
+      <div className={styles.cardEffect}>
         <LazyLoad height={'auto'}>
           <FigureComponent url="https://usercontent.one/wp/www.vjus.no/wp-content/uploads/2019/09/vjus-arkitektur-showreel.jpg" altProp="" />
         </LazyLoad>
       </div>
-      <div className={styles.cardHide_shine}>
+      <div className={styles.cardEffect}>
         <LazyLoad height={'auto'}>
           <FigureComponent url="https://usercontent.one/wp/www.vjus.no/wp-content/uploads/2020/01/Making-a-Film-Company-poster.jpg" altProp="" />
         </LazyLoad>

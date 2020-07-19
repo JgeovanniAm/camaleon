@@ -11,7 +11,7 @@
     transition: all .5s ease
   }
 
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-md) {
     width: 45%;
   }
 }

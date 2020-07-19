@@ -24,6 +24,12 @@ export default function ProjectComponent({ bg, children }) {
 
           @media (min-width: 768px ) {
             .projectItem-bg {
+              height: 250px;
+            }
+          }
+
+          @media (min-width: 990px ) {
+            .projectItem-bg {
               height: 300px;
             }
           }

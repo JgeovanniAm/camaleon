@@ -27,7 +27,7 @@
   }
 }
 
-.cardHide_shine {
+.cardEffect {
   @media (min-width: $breakpoint-md) {
     background: $black;
     border-radius: 50%; 
@@ -37,12 +37,9 @@
     padding-bottom: 15%; 
     position: relative; 
     text-align: center; 
-    transform: rotateY(30deg);
+    transform: rotateY(0deg);
     transition: .8s ease-in-out;
     width: 25%;
-    box-shadow: 
-          -3px 1px 5px rgb(59, 59, 59), 
-          -5px 1px 10px  rgb(59, 59, 59);
   }
 
   &::after {
@@ -65,12 +62,12 @@
   }
 }
 
-.cardShine {
-  transform: rotateY(0deg);
-  transition: .8s ease-in-out;
+.cardEffectShow {
+  transform: rotateY(30deg);
   box-shadow: 
-          0px 0px 0px, 
-          0px 0px 0px;
+          -3px 1px 5px rgb(59, 59, 59), 
+          -5px 1px 10px  rgb(59, 59, 59);
+  transition: .8s ease-in-out;
 
   &::after {
     left: 0%;

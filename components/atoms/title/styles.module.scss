@@ -11,4 +11,8 @@
 .projectItem__title {
   color: $gray-1;
   margin-bottom: 1.5em ;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 1.2em;
+  }
 }
