@@ -1,0 +1,79 @@
+@import '../../../scss/vars.scss';
+
+.heroGaleryHome {
+  margin: 30px 0;
+  
+  img {
+    margin: 10px 0;
+    object-fit: cover;
+    width: 100%;
+
+    @media (min-width: $breakpoint-md) {
+      height: 100%; 
+      left: 0; 
+      margin: 0;
+      object-fit: cover;
+      position: absolute; 
+      top: 0; 
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+.cardHide_shine {
+  @media (min-width: $breakpoint-md) {
+    background: black;
+    border-radius: 50%; 
+    height: 100px; 
+    margin: 40px 50px; 
+    overflow: hidden; 
+    padding-bottom: 15%; 
+    position: relative; 
+    text-align: center; 
+    width: 25%;
+    transform: rotateY(30deg);
+    transition: .8s ease-in-out;
+    box-shadow: 
+          -3px 1px 5px rgb(59, 59, 59), 
+          -5px 1px 10px  rgb(59, 59, 59);
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: -300%;
+    width: 200%;
+    height: 300%;
+    opacity: 1;
+    transform: skew(-40deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(to right, rgba(112, 112, 112, 0) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(251, 251, 251, 0.315) 92%, rgba(134, 134, 134, 0) 100%);
+    transition: left 1s, top 0.7s, opacity .7s ease-in-out;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+}
+
+.cardShine {
+  transform: rotateY(0deg);
+  transition: .8s ease-in-out;
+  box-shadow: 
+          0px 0px 0px, 
+          0px 0px 0px;
+
+  &::after {
+    left: 0%;
+    opacity: 1;
+  }
+}

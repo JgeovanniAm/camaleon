@@ -1,0 +1,34 @@
+.u-container {
+  margin: 20px auto;
+  padding: 10px;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin: 60px auto;
+    width: 1200px;
+  }
+}
+
+.u-showForMediumUp {
+  display: none;
+
+  @media (min-width: $breakpoint-md) {
+    display: block;
+  }
+}
+
+.u-hideForMediumUp {
+  display: block;
+
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.u-buttonPrimary {
+
+}

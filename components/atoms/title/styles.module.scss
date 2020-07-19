@@ -1,0 +1,9 @@
+@import '../../../scss/vars.scss';
+@import '../../../scss/mixins.scss';
+
+.homeHero__title {
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 2rem;
+  color: $gray-1;
+}

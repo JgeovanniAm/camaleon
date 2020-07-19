@@ -1,0 +1,12 @@
+@import '../../../scss/vars.scss';
+
+.homeHero__paragraph {
+  color: $gray-1;
+  text-align: center;
+  font-size: 1.3rem;
+  
+  @media (min-width: $breakpoint-md) {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

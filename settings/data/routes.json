@@ -1,0 +1,24 @@
+{
+  "routes":[
+    {
+      "path": "/",
+      "value": "inicio"
+    },
+    {
+      "path": "/servicios",
+      "value": "servicios"
+    },
+    {
+      "path": "/projectos",
+      "value": "projectos"
+    },
+    {
+      "path": "/nosotros",
+      "value": "nosotros"
+    },
+    {
+      "path": "/contacto",
+      "value": "contacto"
+    }
+  ]
+}
