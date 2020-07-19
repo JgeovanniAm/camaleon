@@ -1,0 +1,23 @@
+@import '../../../scss/vars.scss';
+
+.introProject {
+  background: $white-1;
+  text-align: center;
+}
+
+.wrapperProjects {
+  font-size: 18px;
+  
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+  }
+}
+
+.seeMore {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
