@@ -1,0 +1,14 @@
+.VimeoComponent {
+  height: 40vw;
+  position: relative;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
