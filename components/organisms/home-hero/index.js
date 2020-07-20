@@ -18,9 +18,9 @@ export default function HomeBanner() {
   return (
     <section id="hero">
       <div className={`${styles.homeHero} u-container`}>
-        <TitleComponent Tag="h1" variantClass="homeHero__title">Film and video production with focus on the good views</TitleComponent>
-        <ParagraphComponent variantClass="homeHero__paragraph">I en verden som florerer av film og visuelle inntrykk er det ekstra viktig å tenke nytt. Du trenger visninger som gjør en forandring.
-        La oss kalle det vjus.
+        <TitleComponent Tag="h1" variantClass="homeHero__title">
+Producción de videos con enfoque en las buenas vistas.</TitleComponent>
+        <ParagraphComponent variantClass="homeHero__paragraph">En un mundo que abunda en películas e impresiones visuales, es muy importante pensar de nuevo. Necesita vistas que marquen la diferencia. 
         </ParagraphComponent>
         <GaleryDynamic />
       </div>

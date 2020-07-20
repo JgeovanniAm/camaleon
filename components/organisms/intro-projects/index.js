@@ -26,8 +26,8 @@ export default function IntroProject() {
         </div>
         {
           /*<Link href="/projectos">
-           <a className={`${styles.seeMore} u-cta--secondary`}>ver mas projectos</a>
-           </Link>*/
+            <a className={`${styles.seeMore} u-cta--secondary`}>ver mas projectos</a>
+          </Link>*/
         }
       </div>
     </section>

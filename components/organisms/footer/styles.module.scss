@@ -1,0 +1,10 @@
+@import '../../../scss/vars.scss';
+
+.footer {
+  background: $black;
+  height: 50vh;
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: 50px;
+  }
+}

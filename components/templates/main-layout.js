@@ -9,9 +9,7 @@ export default function MainLayout({ children }) {
         <HeaderComponent />
       </header>
       <main> {children} </main>
-      <footer>
-        <FooterComponent />
-      </footer>
+      <FooterComponent />
     </div>
   )
 }

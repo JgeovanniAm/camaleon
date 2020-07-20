@@ -5,10 +5,8 @@ export default function ProjectComponent({ bg, children }) {
   return (
     <>
       <div className={styles.projectItem}>
-        <Lazyload>
-          <div className='projectItem-bg'>
-          </div>
-        </Lazyload>
+        <div className='projectItem-bg'>
+        </div>
         <div className={styles.projectItem__item}>
           {children}
         </div>
