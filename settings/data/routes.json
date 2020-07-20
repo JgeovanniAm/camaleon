@@ -1,19 +1,19 @@
 {
   "routes":[
     {
-      "path": "/",
+      "path": "/#hero",
       "value": "inicio"
     },
     {
-      "path": "/projectos",
+      "path": "/#projects",
       "value": "projectos"
     },
     {
-      "path": "/nosotros",
-      "value": "nosotros"
+      "path": "/#showreel",
+      "value": "showreel"
     },
     {
-      "path": "/contacto",
+      "path": "/#footer",
       "value": "contacto"
     }
   ]

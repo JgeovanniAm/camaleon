@@ -28,10 +28,11 @@
 }
 
 .cardEffect {
+
   @media (min-width: $breakpoint-md) {
     background: $black;
     border-radius: 50%; 
-    height: 100px; 
+    height: 80px; 
     margin: 40px 50px; 
     overflow: hidden; 
     padding-bottom: 15%; 
@@ -40,6 +41,10 @@
     transform: rotateY(0deg);
     transition: .8s ease-in-out;
     width: 25%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    height: 90px; 
   }
 
   &::after {
@@ -63,14 +68,17 @@
 }
 
 .cardEffectShow {
-  transform: rotateY(30deg);
-  box-shadow: 
-          -3px 1px 5px rgb(59, 59, 59), 
-          -5px 1px 10px  rgb(59, 59, 59);
-  transition: .8s ease-in-out;
 
-  &::after {
-    left: 0%;
-    opacity: 1;
+  @media (min-width: $breakpoint-md) {
+    transform: rotateY(30deg);
+    box-shadow: 
+            -3px 1px 5px rgb(59, 59, 59), 
+            -5px 1px 10px  rgb(59, 59, 59);
+    transition: .8s ease-in-out;
+  
+    &::after {
+      left: 0%;
+      opacity: 1;
+    } 
   }
 }

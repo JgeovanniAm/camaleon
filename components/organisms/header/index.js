@@ -19,7 +19,7 @@ export default function Header() {
         </picture>
       </div>
 
-      <NavComponent variantClass={stateNav} />
+      <NavComponent toggleFunct={toggleNav} variantClass={stateNav} />
 
       <ButtonNavComponent toggleFunct={toggleNav} handleStateNav={stateNav} />
 

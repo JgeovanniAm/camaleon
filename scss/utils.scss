@@ -1,10 +1,11 @@
 .u-container {
   margin: 50px auto;
   padding: 10px;
+  position: relative;
 
   @media (min-width: $breakpoint-md) {
     margin: 60px auto;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   @media (min-width: $breakpoint-xl) {
@@ -39,9 +40,7 @@
   }
 }
 
-.u-buttonPrimary {
-
-}
+.u-buttonPrimary {}
 
 .u-cta {
   box-sizing: border-box;
@@ -74,6 +73,7 @@
   background: $black;
   text-decoration: none;
   width: auto;
+  transition: 0.6s ease-in-out;
 
   &:hover {
     color: $black;

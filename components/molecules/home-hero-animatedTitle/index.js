@@ -14,12 +14,7 @@ export default function TitleAnimated() {
     child.children[0].className = styles.showAnimated;
     const controller = new ScrollMagic.Controller();
     const scene = new ScrollMagic.Scene({ triggerElement: "#herobanner-home", triggerHook: '0.5', offset: 20, duration: 600 })
-      .on('enter', () => {
-        child.children[0].classList.add(styles.titleAnimatedHome);
-      })
-      .on('leave', () => {
-        child.children[0].classList.remove(styles.titleAnimatedHome);
-      })
+      .setClassToggle('#herobanner-home h2', `${styles.titleAnimatedHome}`)
       .addTo(controller);
   }
   return (

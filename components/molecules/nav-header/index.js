@@ -2,12 +2,12 @@ import Link from 'next/link';
 import routesData from '../../../settings/data/routes.json';
 import styles from './styles.module.scss';
 
-export default function NavComponent({ variantClass }) {
+export default function NavComponent({ toggleFunct, variantClass }) {
   const renderNav = ({ routes }) => (
     routes.map((route, i) => (
       <li className={styles.nav__item} key={i}>
         <Link href={route.path}>
-          <a>{route.value}</a>
+          <a onClick={toggleFunct}>{route.value}</a>
         </Link>
       </li>
     )))
@@ -15,7 +15,7 @@ export default function NavComponent({ variantClass }) {
   return (
     <>
       <nav className="nav">
-        <ul className="nav__list">{ routesData && renderNav(routesData) }</ul>
+        <ul className="nav__list">{routesData && renderNav(routesData)}</ul>
       </nav>
       <style jsx>{`
         .nav {
