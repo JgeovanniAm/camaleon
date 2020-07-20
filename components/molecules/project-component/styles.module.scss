@@ -1,0 +1,23 @@
+@import '../../../scss/vars.scss';
+
+.projectItem {
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  margin: 40px 0;
+  transition: all .5s ease;
+
+  &:hover {
+    box-shadow: 0 30px 60px rgba(0,0,0,.05);
+    transform: translateY(-5px);
+    transition: all .5s ease
+  }
+
+  @media (min-width: $breakpoint-md) {
+    width: 45%;
+  }
+}
+
+.projectItem__item {
+  background: $white;
+  padding: 15px 0;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+@import '../../../scss/vars.scss';
+@import '../../../scss/funct.scss';
+
+.nav__item {
+  margin: 25px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: gradient-Brand($red, $green, $blue);
+    display: block;
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 60%;
+
+    @media (min-width: $breakpoint-md) {
+      content: none;
+    }
+  }
+  a {
+    color: $white;
+    font-size: 1rem;
+    opacity: .8;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      opacity: .3;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: inline;
+    margin: 0 .7em;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 0 1.34em;
+  }
+}

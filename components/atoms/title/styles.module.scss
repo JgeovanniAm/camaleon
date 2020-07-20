@@ -1,0 +1,53 @@
+@import '../../../scss/vars.scss';
+@import '../../../scss/utils.scss';
+
+.homeHero__title {
+  color: $gray-1;
+  font-family: $font-secondary;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.projectItem__title {
+  color: $gray-1;
+  margin-bottom: 1.2em ;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 1em;
+  }
+}
+
+.sectionServiceTitle {
+  color: $white;
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 35%;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 4rem;
+    top: 35%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 7rem;
+    top: 25%;
+  }
+}
+
+.serviceItem-title {
+  color: $white;
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 35%;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 3.5rem;
+    top: 35%;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../scss/vars.scss';
+@import '../../../scss/utils.scss';
+
+.wrapperMenuMobile__btn {
+  background: transparent;
+  border: 0;
+  outline: none;
+  opacity: 0.9;
+  width: 90px;
+
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}

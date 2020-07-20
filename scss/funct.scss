@@ -1,0 +1,3 @@
+@function gradient-Brand($r,$g,$b) {
+  @return linear-gradient(90deg, $r 21%, $g 50%, $b 99%)
+}

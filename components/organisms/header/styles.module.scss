@@ -1,0 +1,33 @@
+@import '../../../scss/vars.scss';
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.wrapperLogo {
+  height: auto;
+  width: 80px;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 170px;
+  }
+}
