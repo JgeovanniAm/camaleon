@@ -15,27 +15,31 @@ export default function ServicesSection() {
       service: 'Motion Graphics',
       bg: '../assets/services/motion-g.jpg'
     },
-    {
-      service: 'Produccion Audiovisual',
-      bg: '../assets/services/audiovisual.jpg'
-    },
+    
     {
       service: 'Live Streaming',
       bg: '../assets/services/live.jpg'
+    },
+    {
+      service: 'Produccion Audiovisual',
+      bg: '../assets/services/audiovisual.jpg'
     }
   ]
   return (
-    <section id="service">
+    <section id="services">
       <div className="wrapper-titleServices">
         <TitleComponent Tag="h2" variantClass="sectionServiceTitle"> SERVICIOS </TitleComponent>
       </div>
       {
-        servicesContent.map(item => <ServiceComponent service={item} />)
+        servicesContent.map((item, i) => <ServiceComponent key={i} service={item} />)
       }
       <style jsx>
         {`
           .wrapper-titleServices {
-            background: #e6ebe6 ;
+            background: url("../assets/services/bg1.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             height: 50vh;
             position: relative;
           }

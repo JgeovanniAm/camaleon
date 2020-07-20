@@ -2,14 +2,11 @@ import Lazyload from 'react-lazyload';
 import TitleComponent from '../../atoms/title';
 
 export default function ServiceComponent({ service }) {
-  console.log(service)
   return (
     <>
-      <Lazyload>
         <div className="servicesBg">
           <TitleComponent Tag="h3" variantClass="serviceItem-title">{service.service}</TitleComponent>
         </div>
-      </Lazyload>
       <style jsx>
         {`
           .servicesBg {

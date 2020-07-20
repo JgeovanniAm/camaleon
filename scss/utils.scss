@@ -40,6 +40,17 @@
   }
 }
 
+.u-titleSecundary {
+  font-size: 1.7rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: $white;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2.3rem;
+  }
+}
+
 .u-buttonPrimary {}
 
 .u-cta {
