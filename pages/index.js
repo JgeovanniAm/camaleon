@@ -3,6 +3,7 @@ import MainLayout from '../components/templates/main-layout';
 import HomeBanner from '../components/organisms/home-hero';
 import ShowReelComponent from '../components/organisms/showreel';
 import IntroProject from '../components/organisms/intro-projects';
+import ServicesSection from '../components/organisms/servicios';
 
 const HomePage = () => (
   <>
@@ -17,6 +18,7 @@ const HomePage = () => (
       <HomeBanner></HomeBanner>
       <ShowReelComponent />
       <IntroProject />
+      <ServicesSection />
     </MainLayout>
   </>
 )
