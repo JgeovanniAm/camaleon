@@ -10,7 +10,7 @@ export default function ServiceComponent({ service }) {
       <style jsx>
         {`
           .servicesBg {
-            background: url(${service.bg});
+            background: url(${service.bg}) center center;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;

@@ -26,7 +26,7 @@ export default function NavComponent({ toggleFunct, variantClass }) {
           padding: 0;
           position: absolute;
           right: 0;
-          top: 104px;
+          top: 100px;
           transition: height .6s, visibility .6s ease-in-out;
           visibility: visible;
           width: 100vw;
