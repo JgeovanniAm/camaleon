@@ -11,10 +11,10 @@ export default function ServiceComponent({ service }) {
         {`
           .servicesBg {
             background: url(${service.bg}) center center;
-            background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
             height: 60vh;
+            background-attachment: fixed;
             position: relative;
             width: 100%;
           }

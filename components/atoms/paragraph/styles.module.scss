@@ -2,13 +2,26 @@
 @import '../../../scss/utils.scss';
 
 .homeHero__paragraph {
-  color: $gray-1;
-  text-align: center;
+  color: $white;
+  font-family: $font-secondary;
   font-size: 1.3rem;
-  
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+
   @media (min-width: $breakpoint-md) {
+    width: 75%;
+    font-size: 1.5rem;
     margin: 0 auto;
-    width: 80%;
+    top: 50%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    top: 55%;
+    font-size: 1.7rem;
+    width: 60%;
   }
 }
 

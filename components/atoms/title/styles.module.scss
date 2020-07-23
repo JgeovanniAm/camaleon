@@ -2,10 +2,26 @@
 @import '../../../scss/utils.scss';
 
 .homeHero__title {
-  color: $gray-1;
+  color: $white;
   font-family: $font-secondary;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
   text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    top: 15%;
+    width: 75%;
+    font-size: 2.7rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 50%;
+    top: 20%;
+  }
 }
 
 .projectItem__title {
