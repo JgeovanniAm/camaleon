@@ -16,7 +16,7 @@ export default function HomeBanner() {
         {`
           .homeHero {
             position: relative;
-            background: url('../assets/hero/bg.png');
+            background: url('../assets/hero/bg.jpg');
             background-size: cover;
             background-position-y: center;
             height: 280px;
