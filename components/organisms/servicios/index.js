@@ -4,20 +4,20 @@ import ServiceComponent from "../../molecules/services-components";
 export default function ServicesSection() {
   const servicesContent = [
     {
-      service: 'Produccion Audiovisual',
-      bg: '../assets/services/audiovisual.jpg'
+      service: 'Producción audiovisual',
+      bg: '../assets/services/produccion.png'
     },
     {
-      service: 'Filmacion Aerea',
-      bg: 'https://iberfdrone.es/wp-content/uploads/2019/10/habilitacion-5-a-15-1024x614.jpg'
+      service: 'Filmación Aérea',
+      bg: '../assets/services/aerea.jpg'
     },
     {
       service: 'Live Streaming',
-      bg: '../assets/services/live.jpg'
+      bg: '../assets/services/live-streaming.png'
     },
     {
-      service: 'Fotografia',
-      bg: '../assets/services/fotografia.jpg'
+      service: 'Fotografía',
+      bg: '../assets/services/fotografia.png'
     },
     {
       service: 'Motion Graphics',
@@ -35,11 +35,11 @@ export default function ServicesSection() {
       <style jsx>
         {`
           .wrapper-titleServices {
-            background: url("../assets/services/bg1.jpeg") center center;
-            background-attachment: fixed;
+            background: url("../assets/services/servicios.png") center center;
             background-size: cover;
             background-repeat: no-repeat;
             height: 50vh;
+            background-attachment: fixed;
             position: relative;
           }
 
