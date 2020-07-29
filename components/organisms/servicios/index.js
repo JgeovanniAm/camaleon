@@ -5,7 +5,7 @@ export default function ServicesSection() {
   const servicesContent = [
     {
       service: 'Producción audiovisual',
-      bg: '../assets/services/produccion.png'
+      bg: '../assets/services/produccion.jpg'
     },
     {
       service: 'Filmación Aérea',
@@ -13,11 +13,11 @@ export default function ServicesSection() {
     },
     {
       service: 'Live Streaming',
-      bg: '../assets/services/live-streaming.png'
+      bg: '../assets/services/live-streaming.jpg'
     },
     {
       service: 'Fotografía',
-      bg: '../assets/services/fotografia.png'
+      bg: '../assets/services/fotografia.jpg'
     },
     {
       service: 'Motion Graphics',
@@ -35,7 +35,7 @@ export default function ServicesSection() {
       <style jsx>
         {`
           .wrapper-titleServices {
-            background: url("../assets/services/servicios.png") center center;
+            background: url("../assets/services/servicios.jpg") center center;
             background-size: cover;
             background-repeat: no-repeat;
             height: 50vh;
